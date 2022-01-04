@@ -1,0 +1,19 @@
+{
+  "name": "training",
+  "version": "1.0.0",
+  "description": "",
+  "main": "training.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deniSwd/training.git"
+  },
+  "author": "i'am",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deniSwd/training/issues"
+  },
+  "homepage": "https://github.com/deniSwd/training#readme"
+}
