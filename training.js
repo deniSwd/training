@@ -1,2 +1,6 @@
-const remainder = 11 % 3;
-console.log(remainder);
+function convertToF(celsius) {
+    let fahrenheit = (celsius *9/5+32);
+    return fahrenheit;
+}
+
+console.log(convertToF(-10));
