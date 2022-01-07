@@ -1,9 +1,8 @@
-function even_or_odd(number) {
-    if (number % 2 == 0) {
-        return ("Even");
-    } else {
-        return ("Odd");
+function repeatStr (n, s) {
+    let b ='';
+    for (let i = 1;  i<=n; i++) {
+        b=b+s;
     }
-
+    return b ;
 }
-even_or_odd(42);
+repeatStr (5, '*');
