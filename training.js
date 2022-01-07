@@ -1,9 +1,9 @@
-function reverseString(str) {
-    let newStr ="";
-    for (let i= str.length-1; i>= 0; i--) {
-        newStr += str[i];
+function even_or_odd(number) {
+    if (number % 2 == 0) {
+        return ("Even");
+    } else {
+        return ("Odd");
     }
-    console.log(newStr);
-    return newStr;
+
 }
-reverseString("Howdy");
+even_or_odd(42);
