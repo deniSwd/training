@@ -1,13 +1,17 @@
-function bmi(weight, height) {
-    let bmi = weight / height**2;
-    if (bmi <=18.5) {
-        return ("Underweight")
-    } else if (bmi <=25.0) {
-        return ("Normal")
-    } else if (bmi <=30.0) {
-        return ("Overweight")
-    } else if (bmi >30.0) {
-        return ("Obese")
+const rps = (p1, p2) => {
+    switch (p1+p2) {
+        case 'scissorspaper':
+        case 'rockscissors':
+        case 'paperrock':
+            return 'Player 1 won!';
+        case 'paperscissors':
+        case 'rockpaper':
+        case 'scissorsrock':
+            return 'Player 2 won!';
+        case 'rockrock':
+        case 'scissorsscissors':
+        case 'paperpaper':
+            return 'Draw!';
     }
 }
-bmi(70, 175);
+rps('scissors','paper');
