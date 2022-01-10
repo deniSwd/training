@@ -1,17 +1,10 @@
-const rps = (p1, p2) => {
-    switch (p1+p2) {
-        case 'scissorspaper':
-        case 'rockscissors':
-        case 'paperrock':
-            return 'Player 1 won!';
-        case 'paperscissors':
-        case 'rockpaper':
-        case 'scissorsrock':
-            return 'Player 2 won!';
-        case 'rockrock':
-        case 'scissorsscissors':
-        case 'paperpaper':
-            return 'Draw!';
+let factorialize = (num) => {
+    if (num ==1) {
+        return num
+    } else if (num ==0) {
+        return 1
+    } else {
+        return num *factorialize(num-1)
     }
 }
-rps('scissors','paper');
+console.log(factorialize(5));;
