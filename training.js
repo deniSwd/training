@@ -1,14 +1,13 @@
-const quarterOf = (month) => {
-    if(month >= 1 && month <= 3) {
-        return 1
-    } else if (month >= 4 && month <= 6) {
-        return 2
-    } else if (month >= 7 && month <= 9) {
-        return 3
-    } else if (month >= 10 && month <= 12) {
-        return 4
-    } else {
-        return "hi"
+function computerToPhone(numbers){
+    let myConvert = {7:1,8:2,9:3,4:4,5:5,6:6,1:7,2:8,3:9,0:0}
+    let phone = ''
+    for (i=0; i<=numbers.length; i++){
+        for (let key in myConvert) {
+            if (numbers[i] == key) {
+                phone += myConvert[key]
+            }
+        }
     }
+    return phone
 }
-console.log(quarterOf(5))
+console.log(computerToPhone('58971'))
