@@ -1,13 +1,7 @@
-function computerToPhone(numbers){
-    let myConvert = {7:1,8:2,9:3,4:4,5:5,6:6,1:7,2:8,3:9,0:0}
-    let phone = ''
-    for (i=0; i<=numbers.length; i++){
-        for (let key in myConvert) {
-            if (numbers[i] == key) {
-                phone += myConvert[key]
-            }
-        }
-    }
-    return phone
+function cookingTime(eggs) {
+    let time =0
+    let a = eggs % 8 == 0 ? time = eggs / 8 * 5 : time = ((eggs - eggs % 8) + 8) / 8 * 5
+    return time
 }
-console.log(computerToPhone('58971'))
+
+console.log(cookingTime(46))
