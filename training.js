@@ -1,18 +1,12 @@
-const littleString = (str) =>{
-    let myArr =Array.from(str)
-    let resArr =[]
-    for (let i=0; i<myArr.length; i++) {
-        let idx = myArr.indexOf(myArr[i])
-        let newArr = []
-        while (idx !== -1) {
-            newArr.push(idx)
-            idx = myArr.indexOf(myArr[i], idx + 1)
+const dontGiveMeFive = (start, end) => {
+    let myArray = []
+    for (let i = start; i <= end; i++) {
+        let temp = Array.from(String(i))
+        if (!temp.includes('5')) {
+            myArray.push(i)
         }
-        resArr.push(myArr[i] + newArr.length)
     }
-    let newString = Array.from( new Set (resArr)).join('')
-
-    console.log(newString)
+    return myArray.length
 }
 
-littleString('aaxaaxxxeexfeeeaxf')
+console.log(dontGiveMeFive(-5, 15))
