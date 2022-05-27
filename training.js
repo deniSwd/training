@@ -1,12 +1,11 @@
-const dontGiveMeFive = (start, end) => {
-    let myArray = []
-    for (let i = start; i <= end; i++) {
-        let temp = Array.from(String(i))
-        if (!temp.includes('5')) {
-            myArray.push(i)
+const unusedDigits =(...arg)=> {
+    let newString = ""
+    const myString = String(arg)
+    for (let i=0; i<10; i++){
+        if(!myString.includes(i)){
+            newString +=i
         }
     }
-    return myArray.length
+    return  newString
 }
-
-console.log(dontGiveMeFive(-5, 15))
+unusedDigits(12,34,56,78)
