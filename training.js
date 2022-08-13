@@ -1,5 +1,6 @@
-const redistributeWealth = wealth => {
-    const equalyWealth = wealth.reduce((sum, i) => sum + i, 0) / wealth.length
-    return console.log(wealth.fill(equalyWealth, 0, wealth.length))
+const oddOrEven = (array) => {
+    if (array.length > 0) {
+        return array.reduce((sum, el) => sum + el) % 2 === 0 ? 'even' : 'odd'
+    }
+    return 'even'
 }
-redistributeWealth([2, 1, 5, 7, 10, 11, 7])
