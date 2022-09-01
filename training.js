@@ -1,10 +1,7 @@
-const solution = (str) => {
-    let newStr = ''
-    str.length % 2 !== 0 ? newStr = str.padEnd(str.length + 1, '_') : newStr = str
-    const arr = newStr.split('')
-    const newArr = []
-    for (let i = 0; i <= arr.length - 2; i++) {
-        i % 2 === 0 ? newArr.push(`${arr[i] + arr[i + 1]}`) : newArr
+const solution = (num, sum = 0) => {
+    if(num < 0) return 0
+    else {
+        for(let i = 0; i < num; i++) if (i % 3 === 0 || i % 5 === 0) sum += i
+        return sum
     }
-    return newArr
 }
